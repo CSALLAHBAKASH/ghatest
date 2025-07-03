@@ -8,6 +8,10 @@ on:
 jobs:
   list-files:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./website
     working-directory: ./website
     
     steps:
