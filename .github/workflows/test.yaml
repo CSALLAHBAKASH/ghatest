@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+    - name: List files before checkout
+      run: ls -la
     - uses: actions/checkout@v3
-      
-    - name: List directory contents
+    - name: List files after checkout
+      working-directory: ./website
       run: ls -la
