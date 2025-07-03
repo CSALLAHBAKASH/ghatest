@@ -11,7 +11,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: website
+        working-directory: fold1
     
     steps:
     - name: List files before checkout
